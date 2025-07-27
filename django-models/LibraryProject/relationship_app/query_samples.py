@@ -18,6 +18,7 @@ book1 = Book.objects.create(title="Harry Potter 1", author=author)
 book2 = Book.objects.create(title="Harry Potter 2", author=author)
 
 library = Library.objects.create(name="Downtown Library")
+library = Library.objects.create(name = library_name)
 library.books.add(book1, book2)
 
 librarian = Librarian.objects.create(name="John Doe", library=library)
