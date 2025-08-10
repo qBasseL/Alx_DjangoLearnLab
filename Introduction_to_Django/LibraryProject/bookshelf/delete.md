@@ -1,14 +1,7 @@
-# Delete the book
 from bookshelf.models import Book
 
+Retrieve and delete the book
+book = Book.objects.get(title="Nineteen Eighty-Four") book.delete()
 
-book = Book.objects.get(title="Nineteen Eighty-Four")
-book.delete()
-
-# Confirm deletion
-books = Book.objects.all()
-print(list(books))
-
-# Expected Output:
-# []
-# (An empty list indicates the book was deleted successfully.)
+Confirm deletion
+Book.objects.all() # Expected output: <QuerySet []>

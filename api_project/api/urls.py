@@ -11,3 +11,4 @@ urlpatterns = [
     path('', include(router.urls)),
     path('book/', BookList.as_view(), name='book-list'), 
 ]
+
